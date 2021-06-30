@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*, *:after, *:before, button, input{
+  box-sizing: border-box;
+}
+
+body{
+  font: 10px/1 cursive;
+  font-family: 'Comfortaa';
+  margin: 0;
+  padding: 0;
+}
+fieldset{
+  border-image: linear-gradient(225deg,#ab56fe45 55%, #2f26);
+  text-align: center;
+  background: linear-gradient(225deg,#ab56fe45 55%, #2f26);
+  border-radius: 15px;
+}
+
+button, input{
+  font-family: inherit;
+  font-size: 100%;
+}
+input{
+  width: 75%;
+  height: 120px;
+  border-radius: 5px;
+  border: 1px solid #a5f;
+  font-size: 2rem;
+  color: #a5f;
+}
+input:focus{
+  outline: none;
+  border: 2px solid #2f2;
+}
+
+button:focus,
+button:hover{
+  background: #1f1;
+  outline: none;
+  border: 1px solid #2f2;
+  color: white;
+}
+input:first-child{
+  margin-bottom: 25px;
+}
+input::selection{
+  color: #a5f;
+}
+button{
+  margin-left: 4px;
+  width: 20%;
+  font-size: 1.2rem;
+  height: 50px;
+  border: 1px solid #a5f;
+  border-radius: 5px;
+  background: transparent;
+  color: #a5f;
+}
+
+.copyI{
+  text-align: right;
+  color: #a5f;
+  font-size: 1.1rem;
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  100% {
+    opacity:0;
+  }
+  0% {
+    opacity:1;
+  }
+}
+
+h1{
+  font-size: 2rem;
+  text-align: center;
+  color: #b5f;
+
+}
+aside{
+  text-align: center;
+  color: #95f;
+}
+aside a,
+aside a:link{
+  color: #a5f;
+}
+
+aside a:hover,
+aside a:focus{
+  background: white;;
+  outline: none;
+}
+aside a{
+  font-style: italic;
+}
+aside span{
+  margin-right: 5px;
+}
+input::placeholder{
+  font-size: 2rem;
+  text-align: center;
+  color: #a5f2;
+}
+@media screen and (min-width: 720px){
+
+  h1{
+    font-size: 4rem;
+  }
+  aside{
+    font-size: 2rem;
+  }
+  input{
+    width: 60%;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #a5f;
+    font-size: 4rem;
+  }
+  input:focus{
+    border: 4px solid #2f2;
+  }
+  input:first-child{
+    margin-bottom: 40px; 
+  }
+  button{
+    font-size: 2rem;
+    margin-left: 8px;
+    width: 10%;
+    height: 60px; 
+    border: 2px solid #a5f;
+    border-radius: 10px;
+  }
+  input::placeholder{
+    font-size: 4rem; 
+  }
+  .copyI{
+    font-size: 2.2rem;
+  }
+}
